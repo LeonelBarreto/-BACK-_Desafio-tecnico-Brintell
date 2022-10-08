@@ -1,12 +1,12 @@
-create database api_alunos;
+CREATE DATABASE api_alunos;
 
-drop table if exists alunos;
+DROP TABLE IF EXISTS alunos;
 
-create table alunos(
-    id serial primary key,
-    nome text not null,
-    cpf varchar(20) unique,
-    sexo text not null,
-    email text not null,
-    telefone varchar(20)
+CREATE TABLE alunos (
+    id SERIAL PRIMARY KEY,
+    nome TEXT NOT NULL,
+    cpf VARCHAR(20) UNIQUE,
+    sexo TEXT NOT NULL,
+    email TEXT NOT NULL,
+    telefone VARCHAR(20)
 );

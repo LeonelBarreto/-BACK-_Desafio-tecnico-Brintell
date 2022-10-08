@@ -1,5 +1,9 @@
 const express = require('express');
-const route = express();
+const { listStudents, registerStudent } = require('./controllers/students');
 
+const routes = express();
 
-module.exports = route;
+routes.get('/dashboard', listStudents);
+routes.post('/dashboard', registerStudent);
+
+module.exports = routes;
